@@ -13,17 +13,30 @@
 - (int)match:(NSArray *)otherCards
 {
     int score = 0;
+    // two card match
+//    if ([otherCards count] == 1)
+//    {
+//        PlayingCard *otherCard = [otherCards firstObject];
+//        if ([self.suit isEqualToString:otherCard.suit])
+//        {
+//            score = 1;
+//        }
+//        else if (self.rank == otherCard.rank)
+//        {
+//            score = 4;
+//        }
+//    }
     
-    if ([otherCards count] == 1)
+    // n card match ( at least two card have same element,we think they are matched ）
+    for (PlayingCard *otherCard in otherCards)
     {
-        PlayingCard *otherCard = [otherCards firstObject];
         if ([self.suit isEqualToString:otherCard.suit])
         {
-            score = 1;
+            score += 1;
         }
         else if (self.rank == otherCard.rank)
         {
-            score = 4;
+            score += 4;
         }
     }
     

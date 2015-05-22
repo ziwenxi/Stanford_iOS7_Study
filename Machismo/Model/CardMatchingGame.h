@@ -19,5 +19,7 @@
 - (Card *) cardAtIndex:(NSUInteger)index;
 
 @property (nonatomic,readonly) NSInteger score;
+@property (nonatomic) NSUInteger gameModel;// >=2
+@property (nonatomic,readonly) NSString *gameState;
 
 @end
