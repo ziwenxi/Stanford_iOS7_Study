@@ -1,4 +1,4 @@
-# Stanford_iOS7_Study_Machismo
+# Stanford_iOS7_Study
 
 ![icon](http://images0.cnblogs.com/blog2015/741951/201505/231656226724011.png)
 
