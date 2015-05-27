@@ -52,7 +52,7 @@
     {
         self.selfDefiningModel = self.gameModelSelectSegmented.selectedSegmentIndex + 2;
     }
-    self.gameModelLable.text = [NSString stringWithFormat:@"game model:%d",self.selfDefiningModel];
+    self.gameModelLable.text = [NSString stringWithFormat:@"game model:%lu",(unsigned long)self.selfDefiningModel];
 }
 
 - (void) assertSelfDefiningModel:(NSString *)text
