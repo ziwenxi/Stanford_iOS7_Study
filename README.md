@@ -1,6 +1,7 @@
 # Stanford_iOS7_Study
 
-![icon](http://images0.cnblogs.com/blog2015/741951/201505/231656226724011.png)
+![icon_homework-1](http://images0.cnblogs.com/blog2015/741951/201505/231656226724011.png)
+![icon_lecture-5](http://images0.cnblogs.com/blog2015/741951/201505/311249379693763.png)
 
 ***
 # About
