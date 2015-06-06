@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "PlayingCardDeck.h"
 #import "CardMatchingGame.h"
 
 @interface ViewController ()<UITextFieldDelegate>
@@ -86,9 +85,9 @@
     return _game;
 }
 
-- (Deck *)createDeck
+- (Deck *)createDeck  // abstract
 {
-    return [[PlayingCardDeck alloc] init];
+    return nil;
 }
 
 - (IBAction)touchCardButton:(UIButton *)sender
