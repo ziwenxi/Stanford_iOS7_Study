@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB5B752B1B27233400612AE6 /* TextStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5B752A1B27233400612AE6 /* TextStatsViewController.m */; };
 		BBE3C8821B15BF4B00BB7118 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE3C8811B15BF4B00BB7118 /* main.m */; };
 		BBE3C8851B15BF4B00BB7118 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE3C8841B15BF4B00BB7118 /* AppDelegate.m */; };
 		BBE3C8881B15BF4B00BB7118 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE3C8871B15BF4B00BB7118 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB5B75291B27233400612AE6 /* TextStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextStatsViewController.h; sourceTree = "<group>"; };
+		BB5B752A1B27233400612AE6 /* TextStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextStatsViewController.m; sourceTree = "<group>"; };
 		BBE3C87C1B15BF4B00BB7118 /* Attributor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attributor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE3C8801B15BF4B00BB7118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBE3C8811B15BF4B00BB7118 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 				BBE3C8861B15BF4B00BB7118 /* ViewController.h */,
 				BBE3C8871B15BF4B00BB7118 /* ViewController.m */,
 				BBE3C8891B15BF4B00BB7118 /* Main.storyboard */,
+				BB5B75291B27233400612AE6 /* TextStatsViewController.h */,
+				BB5B752A1B27233400612AE6 /* TextStatsViewController.m */,
 				BBE3C88C1B15BF4B00BB7118 /* Images.xcassets */,
 				BBE3C88E1B15BF4B00BB7118 /* LaunchScreen.xib */,
 				BBE3C87F1B15BF4B00BB7118 /* Supporting Files */,
@@ -222,6 +227,7 @@
 				BBE3C8881B15BF4B00BB7118 /* ViewController.m in Sources */,
 				BBE3C8851B15BF4B00BB7118 /* AppDelegate.m in Sources */,
 				BBE3C8821B15BF4B00BB7118 /* main.m in Sources */,
+				BB5B752B1B27233400612AE6 /* TextStatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
