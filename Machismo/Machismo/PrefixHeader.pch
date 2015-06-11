@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  Machismo
+//
+//  Created by Meng on 15/6/11.
+//  Copyright (c) 2015年 Meng. All rights reserved.
+//
+
+#ifndef Machismo_PrefixHeader_pch
+#define Machismo_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#if DEBUG
+#define ZMLog(...) NSLog(__VA_ARGS__)
+#else
+#define ZMLog(...)
+#endif
+
+#endif
