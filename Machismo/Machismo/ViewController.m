@@ -11,9 +11,6 @@
 
 @interface ViewController ()
 
-@property (strong,readwrite, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
-@property (weak,readwrite, nonatomic) IBOutlet UILabel *scoreLable;
-
 @end
 
 @implementation ViewController
@@ -21,16 +18,6 @@
 - (NSUInteger)cardButtonsNumber
 {
     return [_cardButtons count];
-}
-
-- (CardMatchingGame *) game
-{
-    if(!_game)
-    {
-        _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count]
-                                                  usingDeck:[self createDeck]];
-    }
-    return _game;
 }
 
 - (Deck *)createDeck  // abstract

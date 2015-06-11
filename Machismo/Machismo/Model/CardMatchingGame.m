@@ -26,6 +26,7 @@
 
 - (instancetype) initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck
 {
+    ZMLog(@"init");
     self = [super init];
     if (self)
     {

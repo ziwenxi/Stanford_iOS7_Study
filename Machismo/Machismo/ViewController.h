@@ -19,8 +19,8 @@
 - (Deck *)createDeck;  // abstract
 
 @property (strong,nonatomic) CardMatchingGame *game;
-@property (strong,readonly, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
-@property (weak,readonly, nonatomic) IBOutlet UILabel *scoreLable;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLable;
 
 - (NSUInteger)cardButtonsNumber;
 - (void) updateUI;

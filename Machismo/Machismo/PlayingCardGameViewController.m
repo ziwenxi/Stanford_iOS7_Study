@@ -41,18 +41,18 @@
     _selfDefiningModel = 2;//default model
 }
 
-- (CardMatchingGame *)game
-{
-    ZMLog(@"game setter");
-    if(!self.game)
-    {
-        self.game = [[PlayingCardMatchingGame alloc] initWithCardCount:[self.cardButtons count]
-                                                             usingDeck:[self createDeck]];
-        self.game.gameModel = self.selfDefiningModel;
-        ZMLog(@"create PlayingCardMatchingGamr");
-    }
-    return self.game;
-}
+//- (CardMatchingGame *)game
+//{
+//    ZMLog(@"game setter");
+//    if(!self.game)
+//    {
+//        self.game = [[PlayingCardMatchingGame alloc] initWithCardCount:[self.cardButtons count]
+//                                                             usingDeck:[self createDeck]];
+//        self.game.gameModel = self.selfDefiningModel;
+//        ZMLog(@"create PlayingCardMatchingGamr");
+//    }
+//    return self.game;
+//}
 
 
 - (void) segmentAction:(UISegmentedControl *)Seg
@@ -110,13 +110,18 @@
 
 - (IBAction)touchCardButton:(UIButton *)sender
 {
-    ZMLog(@"touch cardButton");
     //游戏开始后禁用模式选择功能
     self.gameModelSelectSegmented.enabled = NO;
     self.matchModelTextFiled.enabled = NO;
     self.matchModelTextFiled.enabled = NO;
     
     NSUInteger cardIndex = [self.cardButtons indexOfObject:sender];
+    if(!self.game)
+    {
+        self.game = [[PlayingCardMatchingGame alloc] initWithCardCount:[self.cardButtons count]
+                                                             usingDeck:[self createDeck]];
+        self.game.gameModel = self.selfDefiningModel;
+    }
     [self.game chooseCardAtIndex:cardIndex];
     [self updateUI];
 }
