@@ -26,6 +26,8 @@
                         card.suit = suit;
                         card.color = color;
                         card.shading = (i<1) ? true : false;
+                        
+                        [self addCard:card];
                     }
             }
         }

@@ -26,7 +26,6 @@
 
 - (instancetype) initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck
 {
-    ZMLog(@"init");
     self = [super init];
     if (self)
     {
@@ -113,7 +112,12 @@
 
 - (NSString *)validOfOtherCards:(NSArray *)otherCards
 {
-    return [otherCards componentsJoinedByString:@" "];
+    NSMutableString *string = [[NSMutableString alloc] init];
+    for (Card *card in otherCards)
+    {
+        [string appendString:card.contents];
+    }
+    return string;
 }
 
 @end

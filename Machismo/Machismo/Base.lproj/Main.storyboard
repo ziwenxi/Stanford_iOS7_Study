@@ -268,7 +268,7 @@
         <!--SetCard-->
         <scene sceneID="SzP-Mn-uL7">
             <objects>
-                <viewController id="edj-E8-dxx" userLabel="SetCard" customClass="SetCardViewController" sceneMemberID="viewController">
+                <viewController id="edj-E8-dxx" userLabel="SetCard" customClass="SetCardGameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z6U-bD-veY"/>
                         <viewControllerLayoutGuide type="bottom" id="mt9-TB-Hcz"/>
@@ -284,6 +284,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchCardButtons:" destination="edj-E8-dxx" eventType="touchUpInside" id="TEm-tV-dc1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aan-eW-l5Q">
                                 <rect key="frame" x="64" y="72" width="40" height="60"/>
@@ -292,6 +295,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchCardButtons:" destination="edj-E8-dxx" eventType="touchUpInside" id="22V-jo-AiV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2g-Fh-H44">
                                 <rect key="frame" x="160" y="72" width="40" height="60"/>
@@ -300,6 +306,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchCardButtons:" destination="edj-E8-dxx" eventType="touchUpInside" id="0vk-EQ-etZ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAV-sl-WRU">
                                 <rect key="frame" x="17" y="352" width="288" height="42"/>
@@ -314,6 +323,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchCardButtons:" destination="edj-E8-dxx" eventType="touchUpInside" id="Mg2-s0-CSW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gt2-5o-SAZ">
                                 <rect key="frame" x="16" y="140" width="40" height="60"/>
@@ -322,6 +334,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchCardButtons:" destination="edj-E8-dxx" eventType="touchUpInside" id="6d3-pp-fj2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lcr-gW-puz">
                                 <rect key="frame" x="64" y="140" width="40" height="60"/>
@@ -330,6 +345,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchCardButtons:" destination="edj-E8-dxx" eventType="touchUpInside" id="PiB-Dz-5eM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exi-TI-9yo">
                                 <rect key="frame" x="160" y="140" width="40" height="60"/>
@@ -338,6 +356,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchCardButtons:" destination="edj-E8-dxx" eventType="touchUpInside" id="iqD-RM-l18"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FR3-p5-XMB">
                                 <rect key="frame" x="112" y="140" width="40" height="60"/>
@@ -346,6 +367,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchCardButtons:" destination="edj-E8-dxx" eventType="touchUpInside" id="hSk-rx-tHs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucN-1g-1h6">
                                 <rect key="frame" x="16" y="208" width="40" height="60"/>
@@ -354,6 +378,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchCardButtons:" destination="edj-E8-dxx" eventType="touchUpInside" id="8c1-9z-PBS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESU-e8-kgX">
                                 <rect key="frame" x="64" y="208" width="40" height="60"/>
@@ -362,6 +389,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchCardButtons:" destination="edj-E8-dxx" eventType="touchUpInside" id="qrd-ZD-Cys"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9w-LO-rZF">
                                 <rect key="frame" x="160" y="208" width="40" height="60"/>
@@ -370,6 +400,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchCardButtons:" destination="edj-E8-dxx" eventType="touchUpInside" id="51c-bY-gRr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9H-fg-mzv">
                                 <rect key="frame" x="208" y="72" width="40" height="60"/>
@@ -378,6 +411,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchCardButtons:" destination="edj-E8-dxx" eventType="touchUpInside" id="sGa-Xs-IHN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcY-Zo-jl6">
                                 <rect key="frame" x="208" y="140" width="40" height="60"/>
@@ -386,6 +422,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchCardButtons:" destination="edj-E8-dxx" eventType="touchUpInside" id="Ysn-Ef-utO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCQ-Pa-yYv">
                                 <rect key="frame" x="208" y="208" width="40" height="60"/>
@@ -394,6 +433,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchCardButtons:" destination="edj-E8-dxx" eventType="touchUpInside" id="AkY-xi-qNJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQg-UL-njA">
                                 <rect key="frame" x="256" y="72" width="40" height="60"/>
@@ -402,6 +444,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchCardButtons:" destination="edj-E8-dxx" eventType="touchUpInside" id="VU9-9N-BGd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9g-Df-Psm">
                                 <rect key="frame" x="256" y="140" width="40" height="60"/>
@@ -410,6 +455,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchCardButtons:" destination="edj-E8-dxx" eventType="touchUpInside" id="WxA-gS-dQl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tin-j9-hGI">
                                 <rect key="frame" x="256" y="208" width="40" height="60"/>
@@ -418,6 +466,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchCardButtons:" destination="edj-E8-dxx" eventType="touchUpInside" id="SET-0l-rX4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebT-UV-BSM">
                                 <rect key="frame" x="112" y="208" width="40" height="60"/>
@@ -426,6 +477,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchCardButtons:" destination="edj-E8-dxx" eventType="touchUpInside" id="q7B-bw-hJD"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWC-Jk-BXT">
                                 <rect key="frame" x="16" y="402" width="288" height="21"/>
@@ -439,6 +493,9 @@
                                 <state key="normal" title="Restart">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchRestartButton:" destination="edj-E8-dxx" eventType="touchUpInside" id="hQ6-V0-Cfb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -447,8 +504,9 @@
                         <barButtonItem key="rightBarButtonItem" title="History" id="hiT-hB-Vx0"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="gameStateLable" destination="sAV-sl-WRU" id="5kD-cp-Gdr"/>
+                        <outlet property="restartButton" destination="HX0-08-fsM" id="kF3-iC-DV9"/>
                         <outlet property="scoreLable" destination="eWC-Jk-BXT" id="zVf-fX-RdH"/>
-                        <outlet property="stateLable" destination="sAV-sl-WRU" id="IBX-d8-261"/>
                         <outletCollection property="cardButtons" destination="iGD-ug-LSe" id="Sup-Ke-4ca"/>
                         <outletCollection property="cardButtons" destination="Aan-eW-l5Q" id="SIP-iQ-Dlj"/>
                         <outletCollection property="cardButtons" destination="WmX-Uf-gjD" id="yJk-P9-nNV"/>

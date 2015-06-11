@@ -41,20 +41,6 @@
     _selfDefiningModel = 2;//default model
 }
 
-//- (CardMatchingGame *)game
-//{
-//    ZMLog(@"game setter");
-//    if(!self.game)
-//    {
-//        self.game = [[PlayingCardMatchingGame alloc] initWithCardCount:[self.cardButtons count]
-//                                                             usingDeck:[self createDeck]];
-//        self.game.gameModel = self.selfDefiningModel;
-//        ZMLog(@"create PlayingCardMatchingGamr");
-//    }
-//    return self.game;
-//}
-
-
 - (void) segmentAction:(UISegmentedControl *)Seg
 {
     if  (self.gameModelSelectSegmented.selectedSegmentIndex == 2)
