@@ -20,4 +20,5 @@ All course contents is here and this is homework I did to exchange experience.
 * Lecture-3 [Objective-C](http://www.cnblogs.com/nslogmeng/p/4524634.html)
 * Lecture-4 [Foundation And AttributeString](http://www.cnblogs.com/nslogmeng/p/4529498.html)
 * Lecture-5 [View Controller Lifecycle](http://www.cnblogs.com/nslogmeng/p/4541360.html)
+* Lecture-6 [Polymorphism with Controllers, UINavigation, UITabBar](http://www.cnblogs.com/nslogmeng/p/4557590.html)
 * Waiting for more...

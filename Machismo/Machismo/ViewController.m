@@ -55,5 +55,4 @@
     return [UIImage imageNamed:card.isChosen ? @"cardFront" : @"cardBack"];
 }
 
-
 @end
