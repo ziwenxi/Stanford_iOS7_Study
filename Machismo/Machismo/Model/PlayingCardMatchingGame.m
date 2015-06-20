@@ -25,17 +25,19 @@
 
 - (void)updateGameState:(int)forwardScore withIndexOfCard:(int)index
 {
-    if (self.score == forwardScore)
+    if (self.score == forwardScore - self.gameModel * COST_TO_CHOOSE)
     {
         _gameState = [self cardAtIndex:index].contents;
     }
     else if (self.score < (forwardScore - self.gameModel * COST_TO_CHOOSE))
     {
         _gameState = [NSString stringWithFormat:@"%@ with %@ not matched. %d point penalty!",[self cardAtIndex:index].contents,self.validOfOtherCards,forwardScore - self.score];
+        [self.gameStateHistory addObject:_gameState];
     }
     else if (self.score > (forwardScore - self.gameModel * COST_TO_CHOOSE))
     {
         _gameState = [NSString stringWithFormat:@"%@ matched %@ . get %d score!",[self cardAtIndex:index].contents,self.validOfOtherCards,self.score - forwardScore];
+        [self.gameStateHistory addObject:_gameState];
     }
 }
 

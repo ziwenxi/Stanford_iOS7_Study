@@ -24,6 +24,15 @@
     return _cards;
 }
 
+- (NSMutableArray *)gameStateHistory
+{
+    if (!_gameStateHistory)
+    {
+        _gameStateHistory = [[NSMutableArray alloc] init];
+    }
+    return _gameStateHistory;
+}
+
 - (instancetype) initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck
 {
     self = [super init];
@@ -103,7 +112,6 @@
                     {
                         otherCard.chosen = NO;
                     }
-                    
                 }
             }
         }
@@ -115,7 +123,7 @@
     NSMutableString *string = [[NSMutableString alloc] init];
     for (Card *card in otherCards)
     {
-        [string appendString:card.contents];
+        [string appendFormat:@"%@ ",card.contents];
     }
     return string;
 }

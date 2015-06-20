@@ -9,6 +9,7 @@
 #import "PlayingCardGameViewController.h"
 #import "PlayingCardDeck.h"
 #import "PlayingCardMatchingGame.h"
+#import "HistoryViewController.h"
 
 @interface PlayingCardGameViewController ()
 
@@ -40,6 +41,19 @@
     
     _selfDefiningModel = 2;//default model
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"show PlayingCardGameHistory"])
+    {
+        if ([segue.destinationViewController isKindOfClass:[HistoryViewController class]])
+        {
+            HistoryViewController *HVC = (HistoryViewController *)segue.destinationViewController;
+            HVC.history = self.game.gameStateHistory;
+        }
+    }
+}
+
 
 - (void) segmentAction:(UISegmentedControl *)Seg
 {

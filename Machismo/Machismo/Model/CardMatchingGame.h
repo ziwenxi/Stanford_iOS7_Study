@@ -27,5 +27,6 @@ static const int COST_TO_CHOOSE = 1;
 @property (nonatomic,readonly) NSString *validOfOtherCards;
 @property (nonatomic,readonly) NSInteger score;
 @property (nonatomic) NSUInteger gameModel;// >=2
+@property (nonatomic,strong) NSMutableArray *gameStateHistory;
 
 @end

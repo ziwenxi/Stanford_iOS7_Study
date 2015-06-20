@@ -64,7 +64,7 @@
 
     }
     
-    if (score == 4)
+    if (score == 3)
     {
         score = 1;
     }
