@@ -9,9 +9,11 @@
 #import "CardMatchingGame.h"
 
 @interface CardMatchingGame()
+
+@property (nonatomic,readwrite) NSString *validOfOtherCards;
 @property (nonatomic,readwrite) NSInteger score;
-@property (nonatomic,strong) NSMutableArray *cards;//of card
-@property (nonatomic,readwrite) NSString *gameState;
+@property (nonatomic,strong) NSMutableArray *cards;//of playingcard
+
 @end
 
 @implementation CardMatchingGame
@@ -20,6 +22,15 @@
 {
     if (!_cards) _cards = [[NSMutableArray alloc] init];
     return _cards;
+}
+
+- (NSMutableArray *)gameStateHistory
+{
+    if (!_gameStateHistory)
+    {
+        _gameStateHistory = [[NSMutableArray alloc] init];
+    }
+    return _gameStateHistory;
 }
 
 - (instancetype) initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck
@@ -44,10 +55,6 @@
     
     return self;
 }
-
-static const int MISMATCH_PENALTY = 2;
-static const int MATCH_BOUNDS = 4;
-static const int COST_TO_CHOOSE = 1;
 
 - (Card *) cardAtIndex:(NSUInteger)index
 {
@@ -82,43 +89,43 @@ static const int COST_TO_CHOOSE = 1;
             
             if ([otherCards count] < self.gameModel - 1)
             {
-                self.gameState = [NSString stringWithFormat:@"State:%@",card.contents];
                 return;
             }
             else
             {
+                self.validOfOtherCards = [self validOfOtherCards:otherCards];
                 int matchScore = [card match:otherCards];
                 
                 if (matchScore)
                 {
-                    NSMutableString *state = [NSMutableString stringWithFormat:@"State:%@ matched",card.contents];
                     self.score += matchScore * MATCH_BOUNDS * self.gameModel;
                     for (Card *otherCard in otherCards)
                     {
-                        [state appendFormat:@" %@",otherCard.contents];
                         otherCard.matched = YES;
                     }
-                    [state appendFormat:@". Get %d score!",matchScore * MATCH_BOUNDS * self.gameModel];
                     card.matched = YES;
-                    
-                    self.gameState = state;
                 }
                 else
                 {
-                    NSMutableString *state = [NSMutableString stringWithFormat:@"State:%@ with",card.contents];
                     self.score -= MISMATCH_PENALTY * self.gameModel;
                     for (Card *otherCard in otherCards)
                     {
-                        [state appendFormat:@" %@",otherCard.contents];
                         otherCard.chosen = NO;
                     }
-                    [state appendFormat:@" not matched! %d point penalty!",MISMATCH_PENALTY * self.gameModel];
-                    
-                    self.gameState = state;
                 }
             }
         }
     }
+}
+
+- (NSString *)validOfOtherCards:(NSArray *)otherCards
+{
+    NSMutableString *string = [[NSMutableString alloc] init];
+    for (Card *card in otherCards)
+    {
+        [string appendFormat:@"%@ ",card.contents];
+    }
+    return string;
 }
 
 @end

@@ -10,6 +10,10 @@
 #import "Deck.h"
 #import "Card.h"
 
+static const int MISMATCH_PENALTY = 2;
+static const int MATCH_BOUNDS = 4;
+static const int COST_TO_CHOOSE = 1;
+
 @interface CardMatchingGame : NSObject
 
 // designated initializer
@@ -18,8 +22,11 @@
 - (void) chooseCardAtIndex:(NSUInteger)index;
 - (Card *) cardAtIndex:(NSUInteger)index;
 
+- (NSString *)validOfOtherCards:(NSArray *)otherCards;
+
+@property (nonatomic,readonly) NSString *validOfOtherCards;
 @property (nonatomic,readonly) NSInteger score;
 @property (nonatomic) NSUInteger gameModel;// >=2
-@property (nonatomic,readonly) NSString *gameState;
+@property (nonatomic,strong) NSMutableArray *gameStateHistory;
 
 @end
