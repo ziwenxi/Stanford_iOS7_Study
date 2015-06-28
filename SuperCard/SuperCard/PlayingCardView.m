@@ -18,7 +18,7 @@
 
 @synthesize faceCardScaleFactor = _faceCardScaleFactor;
 
-#define DEFAULT_FACE_CARD_SCALE_FACTOR 0.90
+#define DEFAULT_FACE_CARD_SCALE_FACTOR 0.90 //牌面缩放比例
 
 - (CGFloat)faceCardScaleFactor
 {

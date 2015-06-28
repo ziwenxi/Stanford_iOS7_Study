@@ -9,6 +9,8 @@ Standord open class for iOS7,you can search the course by iTunes U.
 
 Or see the course that translation of [Chinese](http://open.163.com/special/opencourse/ios7.html)
 
+Or see in [Stanford](http://web.stanford.edu/class/cs193p/cgi-bin/drupal/downloads-2013-fall)
+
 All course contents is here and this is homework I did to exchange experience.
 
 ***
@@ -21,4 +23,5 @@ All course contents is here and this is homework I did to exchange experience.
 * Lecture-4 [Foundation And AttributeString](http://www.cnblogs.com/nslogmeng/p/4529498.html)
 * Lecture-5 [View Controller Lifecycle](http://www.cnblogs.com/nslogmeng/p/4541360.html)
 * Lecture-6 [Polymorphism with Controllers, UINavigation, UITabBar](http://www.cnblogs.com/nslogmeng/p/4557590.html)
+* Lecture-7 [Custom Views](http://www.cnblogs.com/nslogmeng/p/4604789.html)
 * Waiting for more...
