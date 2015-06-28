@@ -13,7 +13,7 @@ All course contents is here and this is homework I did to exchange experience.
 
 ***
 
-# Course notes
+# Course notes (for Chinese)
   
 * Lecture-1 [iOS overview](http://www.cnblogs.com/nslogmeng/p/4512707.html)
 * Lecture-2 [Xcode](http://www.cnblogs.com/nslogmeng/p/4517900.html)
