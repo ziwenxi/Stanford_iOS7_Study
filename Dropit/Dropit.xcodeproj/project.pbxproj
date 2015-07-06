@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB840ECB1B4AE11500304922 /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB840ECA1B4AE11500304922 /* BezierPathView.m */; };
 		BBF0BCE81B4174E700D9191F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF0BCE71B4174E700D9191F /* main.m */; };
 		BBF0BCEB1B4174E700D9191F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF0BCEA1B4174E700D9191F /* AppDelegate.m */; };
 		BBF0BCEE1B4174E700D9191F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF0BCED1B4174E700D9191F /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB840EC91B4AE11500304922 /* BezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BezierPathView.h; path = ../BezierPathView.h; sourceTree = "<group>"; };
+		BB840ECA1B4AE11500304922 /* BezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BezierPathView.m; path = ../BezierPathView.m; sourceTree = "<group>"; };
 		BBF0BCE21B4174E700D9191F /* Dropit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dropit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF0BCE61B4174E700D9191F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBF0BCE71B4174E700D9191F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 				BBF0BCEF1B4174E700D9191F /* Main.storyboard */,
 				BBF0BD0B1B417C3000D9191F /* DropitBehavior.h */,
 				BBF0BD0C1B417C3000D9191F /* DropitBehavior.m */,
+				BB840EC91B4AE11500304922 /* BezierPathView.h */,
+				BB840ECA1B4AE11500304922 /* BezierPathView.m */,
 				BBF0BCF21B4174E700D9191F /* Images.xcassets */,
 				BBF0BCF41B4174E700D9191F /* LaunchScreen.xib */,
 				BBF0BCE51B4174E700D9191F /* Supporting Files */,
@@ -226,6 +231,7 @@
 			files = (
 				BBF0BCEE1B4174E700D9191F /* ViewController.m in Sources */,
 				BBF0BD0D1B417C3000D9191F /* DropitBehavior.m in Sources */,
+				BB840ECB1B4AE11500304922 /* BezierPathView.m in Sources */,
 				BBF0BCEB1B4174E700D9191F /* AppDelegate.m in Sources */,
 				BBF0BCE81B4174E700D9191F /* main.m in Sources */,
 			);
