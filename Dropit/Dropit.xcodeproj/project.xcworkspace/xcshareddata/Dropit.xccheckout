@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>2E885489-FCB9-45C3-B7D4-3332D56A5BDD</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Dropit</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E1B45B7DDB989D47127FBED485693BEDD8B7061D</key>
 		<string>https://github.com/NSLogMeng/Stanford_iOS7_Study.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Dropit/Dropit.xcodeproj/project.xcworkspace</string>
+	<string>Dropit/Dropit.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E1B45B7DDB989D47127FBED485693BEDD8B7061D</key>

@@ -27,9 +27,18 @@
     return _animator;
 }
 
+- (DropitBehavior *)dropitBehavior
+{
+    if (!_dropitBehavior)
+    {
+        _dropitBehavior = [[DropitBehavior alloc] init];
+        [self.animator addBehavior:_dropitBehavior];
+    }
+    return  _dropitBehavior;
+}
+
 - (void)dynamicAnimatorDidPause:(UIDynamicAnimator *)animator//动画暂停时检查结果
 {
-    NSLog(@"Pause");
     [self removeCompletedRow];
 }
 
@@ -37,42 +46,36 @@
 {
     NSMutableArray *dropsToRemove = [[NSMutableArray alloc] init];
     
-    for (CGFloat y = self.gameView.bounds.size.height - DROP_SIZE.height / 2;y > 0; y -= DROP_SIZE.height)
+    for (CGFloat y = self.gameView.bounds.size.height-DROP_SIZE.height/2; y > 0; y -= DROP_SIZE.height)
     {
         BOOL rowIsComplete = YES;
         NSMutableArray *dropsFound = [[NSMutableArray alloc] init];
-        for (CGFloat x = DROP_SIZE.width/2; x <= self.gameView.bounds.size.width - DROP_SIZE.width/2; x += DROP_SIZE.width)
+        for (CGFloat x = DROP_SIZE.width/2; x <= self.gameView.bounds.size.width-DROP_SIZE.width/2; x += DROP_SIZE.width)
         {
             UIView *hitView = [self.gameView hitTest:CGPointMake(x, y) withEvent:NULL];
-            if([hitView superview] == self.gameView)
-            {
+            if ([hitView superview] == self.gameView) {
                 [dropsFound addObject:hitView];
-            }
-            else
-            {
+            } else {
                 rowIsComplete = NO;
                 break;
             }
         }
         if (![dropsFound count]) break;
-        if (rowIsComplete) [dropsFound addObjectsFromArray:dropsFound];
+        if (rowIsComplete) [dropsToRemove addObjectsFromArray:dropsFound];
     }
     
-    if ([dropsToRemove count])
-    {
-        for (UIView *drop in dropsToRemove)
-        {
+    if ([dropsToRemove count]) {
+        for (UIView *drop in dropsToRemove) {
             [self.dropitBehavior removeItem:drop];
         }
         [self animateRemovingDrops:dropsToRemove];
+        return YES;
     }
     
-    return NO;
-}
+    return NO;}
 
 - (void)animateRemovingDrops:(NSArray *)dropsToRemove
 {
-    NSLog(@"remove");
     [UIView animateWithDuration:1.0
                      animations:^{
                          for (UIView *drop in dropsToRemove)
@@ -85,16 +88,6 @@
                      completion:^(BOOL finished){
                          [dropsToRemove makeObjectsPerformSelector:@selector(removeFromSuperview)];
                      }];
-}
-
-- (DropitBehavior *)dropitBehavior
-{
-    if (!_dropitBehavior)
-    {
-        _dropitBehavior = [[DropitBehavior alloc] init];
-        [self.animator addBehavior:_dropitBehavior];
-    }
-    return  _dropitBehavior;
 }
 
 static const CGSize DROP_SIZE = {40,40};
