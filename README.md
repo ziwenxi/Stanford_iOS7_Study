@@ -24,4 +24,5 @@ All course contents is here and this is homework I did to exchange experience.
 * Lecture-5 [View Controller Lifecycle](http://www.cnblogs.com/nslogmeng/p/4541360.html)
 * Lecture-6 [Polymorphism with Controllers, UINavigation, UITabBar](http://www.cnblogs.com/nslogmeng/p/4557590.html)
 * Lecture-7 [Custom Views](http://www.cnblogs.com/nslogmeng/p/4604789.html)
+* Lecture-8 [Animation](http://www.cnblogs.com/nslogmeng/p/4622995.html)
 * Waiting for more...

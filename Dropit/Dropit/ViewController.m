@@ -13,7 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIView *gameView;
 @property (strong,nonatomic) UIDynamicAnimator *animator;
 @property (strong,nonatomic) DropitBehavior *dropitBehavior;
-@property (strong,nonatomic) UIDynamicItemBehavior *dynamicItemBehavior;
 @end
 
 @implementation ViewController
@@ -28,25 +27,9 @@
     return _animator;
 }
 
-- (UIDynamicItemBehavior *)dynamicItemBehavior
-{
-    if (!_dynamicItemBehavior)
-    {
-        _dynamicItemBehavior = [[UIDynamicItemBehavior alloc] init];
-        _dynamicItemBehavior.allowsRotation = NO;
-        _dynamicItemBehavior.friction = 0;
-        _dynamicItemBehavior.elasticity = 0;
-        _dynamicItemBehavior.density = 0;
-        _dynamicItemBehavior.resistance = 0;
-        _dynamicItemBehavior.angularResistance = 0;
-        [self.animator addBehavior:_dynamicItemBehavior];
-    }
-    
-    return _dynamicItemBehavior;
-}
-
 - (void)dynamicAnimatorDidPause:(UIDynamicAnimator *)animator//动画暂停时检查结果
 {
+    NSLog(@"Pause");
     [self removeCompletedRow];
 }
 
@@ -89,6 +72,7 @@
 
 - (void)animateRemovingDrops:(NSArray *)dropsToRemove
 {
+    NSLog(@"remove");
     [UIView animateWithDuration:1.0
                      animations:^{
                          for (UIView *drop in dropsToRemove)
@@ -133,7 +117,6 @@ static const CGSize DROP_SIZE = {40,40};
     [self.gameView addSubview:dropView];
     
     [self.dropitBehavior addItem:dropView];
-    [self.dynamicItemBehavior addItem:dropView];
 }
 
 - (UIColor *)randomColor
